@@ -9,7 +9,7 @@ import {
 } from '@mui/material';
 import { Home } from '@mui/icons-material';
 
-function App() {
+const App = () => {
   return (
     <Box>
       <AppBar>
