@@ -1,26 +1,32 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import {
+  AppBar,
+  Box,
+  Toolbar,
+  // IconButton,
+  Button,
+  Typography
+} from '@mui/material';
+import { Home } from '@mui/icons-material';
 
-function App() {
+const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    <Box>
+      <AppBar>
+        <Toolbar>
+          <Button
+            color='inherit'
+            sx={{ mr: 2 }}
+          >
+            <Home fontSize='large'/>
+          </Button>
+          <Typography variant='h6' component='div' sx={{ flexGrow: 1 }}>
+            Haruto Kitagawa's Home Page
+          </Typography>
+        </Toolbar>
+      </AppBar>
+    </Box>
+  )
 }
 
 export default App;
